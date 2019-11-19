@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    nav{
+    margin: 15;
+    background-color: #b3d9ff;
+    align="left";
+
+    }
+
+</style>
+
+<nav class="navbar navbar-inverse" align="center">
+  <div class="container-fluid">
+
+      <img src="https://di0da3x67ebhy.cloudfront.net/static/site/img/logo-h-ge.png" >
+
+    </div>
+</nav>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Sistema genomika</title>
+    <h1 align="center">Genomika diagnóticos</h1>
+</head>
+
+<body>
+      <form method="get" action = "/resultado"  >
+        <h2>Informe a doença de interesse na caixa abaixo:</h2>
+        <input type="text" name="doenca" id="fdoenca"/>
+        <input type="submit"  href="/resultado.html" id = "meu-submit" value="Enviar"/>
+      </form>
+      <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
